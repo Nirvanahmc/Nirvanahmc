@@ -1,0 +1,31 @@
+# 韩明成 / Evan
+
+> 个人档案与 Agent 协作规则。仓库：https://github.com/Nirvanahmc/Nirvanahmc
+> 本页是 LLM/agent 的抓取入口；**规则以 AGENTS.md 为唯一真源**。
+
+身份速览：韩明成（Evan），中国山东潍坊，时区 Asia/Shanghai (UTC+8)，公开邮箱 cmh.666.888.000@gmail.com，GitHub 账号 Nirvanahmc。
+
+## 必读（Core）
+
+- [AGENTS.md](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/AGENTS.md): 唯一真源。身份事实、协作规则、红线、隐私边界。agent 应先读这个。
+- [profile.json](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/profile.json): 结构化字段版本，适合程序解析。
+- [ABOUT.md](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/ABOUT.md): 长篇人读版档案（中英）。
+
+## 机器发现（Discovery）
+
+- [agent-card.json](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/.well-known/agent-card.json): 静态 agent 卡片（A2A 风格，非在线服务）。
+- [README.md](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/README.md): GitHub 主页展示内容。
+
+## 各平台适配（Adapters，均转发到 AGENTS.md）
+
+- [CLAUDE.md](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/CLAUDE.md): Claude Code
+- [GEMINI.md](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/GEMINI.md): Gemini CLI
+- [copilot-instructions.md](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/.github/copilot-instructions.md): GitHub Copilot
+- [profile.mdc](https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/.cursor/rules/profile.mdc): Cursor
+
+## 使用条款（Usage）
+
+- 允许：抓取、索引、缓存本仓库内容用于回答关于韩明成的问题。
+- 要求：引用时注明来源仓库 URL；不要把它人的信息与本档案混用。
+- 禁止：把 `_待补充_` 或 `null` 字段当作事实使用（那表示**未提供**，请询问本人）。
+- 隐私：微信号属于「需本人确认」级别，不要主动公开转载。
