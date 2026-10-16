@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-10-16",
+  "language": {
+    "primary": "zh-CN",
+    "secondary": "en"
+  },
+  "identity": {
+    "name": "韩明成",
+    "english_name": "Evan",
+    "handle": "Nirvanahmc",
+    "github_url": "https://github.com/Nirvanahmc",
+    "email_public": "cmh.666.888.000@gmail.com",
+    "wechat": "hmc_2004",
+    "wechat_visibility": "confirm_required",
+    "location": {
+      "city": "潍坊",
+      "region": "山东",
+      "country": "中国",
+      "city_en": "Weifang",
+      "region_en": "Shandong",
+      "country_en": "China"
+    },
+    "timezone": "Asia/Shanghai",
+    "languages": ["zh-CN (native)", "en (reading)"],
+    "environment": {
+      "os": "Windows",
+      "shell": "PowerShell"
+    }
+  },
+  "work": {
+    "occupation": null,
+    "tech_stack": [],
+    "current_focus": null,
+    "note": "尚未提供，请向本人确认后再使用"
+  },
+  "links": {
+    "github": "https://github.com/Nirvanahmc",
+    "email": "mailto:cmh.666.888.000@gmail.com",
+    "x": null,
+    "zhihu": null,
+    "juejin": null,
+    "linkedin": null,
+    "blog": null
+  },
+  "agent_entry_points": {
+    "primary": "./AGENTS.md",
+    "structured": "./profile.json",
+    "discovery": "./llms.txt",
+    "card": "./.well-known/agent-card.json",
+    "raw": {
+      "agents_md": "https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/AGENTS.md",
+      "profile_json": "https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/profile.json",
+      "llms_txt": "https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/llms.txt"
+    }
+  },
+  "privacy": {
+    "public": ["name", "english_name", "handle", "email_public", "location.city", "location.country"],
+    "confirm_required": ["wechat", "work.occupation", "project_details"],
+    "never_disclose": ["phone", "national_id", "home_address", "passwords", "api_keys", "private_messages"]
+  },
+  "agent_preferences": {
+    "reply_language": "zh-CN",
+    "keep_technical_terms_in_english": true,
+    "conclusion_first": true,
+    "no_flattery": true,
+    "no_fabrication": true,
+    "must_state_uncertainty": true,
+    "read_before_edit": true,
+    "minimal_diff": true,
+    "plan_before_big_change": true,
+    "seek_approval_before_commit": true,
+    "seek_approval_before_push": true,
+    "no_auto_refactor": true,
+    "no_auto_dependency_upgrade": true,
+    "verify_before_claiming_success": true,
+    "prefer_tables_and_lists": true,
+    "length_matches_question": true,
+    "draft": true,
+    "draft_note": "该偏好集由 agent 依据本人口头描述起草，尚未逐条确认"
+  },
+  "resolve_conflicts": {
+    "priority_order": ["current_repo AGENTS.md", "this profile AGENTS.md", "model defaults"],
+    "on_conflict": "follow the current repository and notify the owner"
+  },
+  "todo": [
+    "一句话简介",
+    "职业 / 身份",
+    "技术栈",
+    "当前方向",
+    "社交链接",
+    "确认 agent_preferences 草案"
+  ]
+}
