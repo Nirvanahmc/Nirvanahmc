@@ -1,0 +1,64 @@
+{
+  "name": "韩明成 (Evan) — Personal Profile Card",
+  "description": "韩明成（Evan）的静态个人档案卡片，供 AI agent 发现与读取其身份信息、协作偏好和隐私边界。注意：这是一个 STATIC PROFILE，不是可对话的在线 agent 服务，不提供 A2A 端点；能力列表描述的是『关于本人的可查询信息』，而非可调用的工具。",
+  "url": "https://github.com/Nirvanahmc/Nirvanahmc",
+  "version": "1.0.0",
+  "protocolVersion": "0.2.6",
+  "documentationUrl": "https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/AGENTS.md",
+  "provider": {
+    "organization": "韩明成 (Evan)",
+    "url": "https://github.com/Nirvanahmc"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain", "application/json"],
+  "preferredTransport": "none",
+  "skills": [
+    {
+      "id": "identity-lookup",
+      "name": "身份信息查询 (Identity)",
+      "description": "查询韩明成的基本身份信息：姓名、英文名、所在地、时区、公开邮箱、GitHub 账号。数据源为 profile.json 的 identity 字段。",
+      "tags": ["profile", "identity", "contact"],
+      "examples": ["韩明成是谁？", "Evan 在哪个时区？"],
+      "inputModes": ["text/plain"],
+      "outputModes": ["application/json", "text/plain"]
+    },
+    {
+      "id": "collaboration-preferences",
+      "name": "协作偏好 (Preferences)",
+      "description": "读取本人对 AI agent 的协作要求：中文优先、结论先行、不确定必须声明、改动前先读文件、大改动先给方案、未经允许不得 commit/push 等。数据源为 AGENTS.md §2 与 profile.json 的 agent_preferences 字段。",
+      "tags": ["preferences", "instructions", "agents-md"],
+      "examples": ["和他协作要注意什么？", "可以自动提交代码吗？"],
+      "inputModes": ["text/plain"],
+      "outputModes": ["application/json", "text/plain"]
+    },
+    {
+      "id": "privacy-boundary",
+      "name": "隐私边界 (Privacy)",
+      "description": "查询哪些个人信息可公开使用、哪些需本人确认、哪些永不输出。数据源为 AGENTS.md §2.4 与 profile.json 的 privacy 字段。",
+      "tags": ["privacy", "policy"],
+      "examples": ["他的微信号可以公开转载吗？"],
+      "inputModes": ["text/plain"],
+      "outputModes": ["application/json", "text/plain"]
+    }
+  ],
+  "x-static-profile": true,
+  "x-entry-points": {
+    "agents_md": "https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/AGENTS.md",
+    "profile_json": "https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/profile.json",
+    "llms_txt": "https://raw.githubusercontent.com/Nirvanahmc/Nirvanahmc/main/llms.txt"
+  },
+  "x-usage-policy": {
+    "allowed": ["crawl", "index", "cite with source URL"],
+    "forbidden": [
+      "treat null or 待补充 fields as facts",
+      "republish the WeChat ID without confirmation",
+      "attribute other people's information to this profile"
+    ]
+  },
+  "updated_at": "2026-10-16"
+}
